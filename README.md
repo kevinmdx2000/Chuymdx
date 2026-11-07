@@ -1,2 +1,5 @@
 # Chuymdx
 Clase de introducción a GIT y GITHUB
+Este es mi primer REPOSITORIO EN GITHUB
+SOMOS DE ALGORITMICS AMBATO
+ME LLAMO KEVIN TvT
