@@ -11,12 +11,14 @@ def rescource_path(relative_path):
 
 # Configuración de la ventana
 wn = turtle.Screen()
+
 wn.title('Juego de Aeropuerto')
 wn.setup(width=600, height=600)
 wn.bgcolor('white')
 wn.tracer(0)  # Desactiva el refresco automático para animación suave
 
-canvas = wn.getcanvas()  # Obtenemos el canvas de la ventana
+canvas = wn.getcanvas()
+
 
 # Función para crear una "imagen" en el canvas
 def crear_imagen(x, y, imagen_path):
@@ -68,6 +70,7 @@ cuerpos = [
     rescource_path("avion4.png"),
 ]
 
+
 # Función para actualizar el cuerpo de manera suave
 def actualizar_cuerpo():
     global cuerpo
@@ -97,9 +100,12 @@ def game_loop():
         contador += 1
         actualizar_cuerpo()
 
+    
     wn.update()  # Refresca la pantalla
     wn.ontimer(game_loop, 100)  # Repite cada 100ms
+
 
 # Iniciar juego
 game_loop()
 wn.mainloop()
+#Final del codigo
